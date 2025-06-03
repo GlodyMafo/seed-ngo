@@ -1,0 +1,77 @@
+.programs-cont h3{
+  text-align: center;
+}
+
+.programs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.programs img{
+  width: 670px;
+}
+
+.programs .grid-3{
+  width: 40%;
+}
+
+.card {
+  margin-block: 14px;
+  background: #2980b9;
+  color: white;
+}
+
+.card h4{
+  font-size: 1.1rem;
+}
+
+
+
+.seed-title {
+      text-align: center;
+      color: #2980b9;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .seed-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .seed-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .seed-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .seed-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .seed-card-body {
+      padding: 1rem;
+    }
+
+    .seed-card-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #2980b9;
+      margin-bottom: 0.5rem;
+    }
+
+    .seed-card-text {
+      font-size: 0.95rem;
+      color: #555;
+    }

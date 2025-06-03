@@ -1,0 +1,674 @@
+/* --- Variables de base --- */
+:root {
+  /* --primary-color: #2a7b3f; */
+  --secondary-color: #f4f4f4;
+  --accent-color: #dff0df;
+  --text-color: #333;
+  --white: #fff;
+  --shadow: rgba(0, 0, 0, 0.1);
+  --max-width: 1200px;
+}
+
+/* --- Réinitialisation de base --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: var(--white);
+  color: var(--text-color);
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+/* --- Mise en page globale --- */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-inline: 1rem;
+  padding-block: 15px;
+}
+
+/* --- Header --- */
+header {
+  color: var(--white);
+  padding: 0;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 80px;
+}
+
+.logo {
+  width: 80px;
+}
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0px;
+  margin: 0px;
+}
+.nav-links a {
+  font-weight: 500;
+  color: #1b2c19;
+  font-size: 18px;
+  transition: 0.2s ease;
+}
+.nav-links a:hover {
+  text-decoration: underline;
+  color: #19679f;
+}
+
+.barre{
+  background: #19679f;
+  height: 10px;
+  margin: 0px;
+}
+
+.separate{
+  margin-block: 12px;
+}
+
+.nav-btn{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.nav-btn a{
+  color: black;
+  cursor: pointer;
+}
+
+.nav-btn a:hover{
+  color: #19679f;
+}
+
+.donate, .contact-nav {
+padding-inline: 20px;
+padding-block: 10px;
+font-size: 20px;
+cursor: pointer;
+border:none;
+border-radius: 10px;
+background-color: #19679f;
+color: #dff0df;
+transition: 0.5s ease;
+}
+
+.donate:hover, .contact-nav:hover{
+  background-color: #0b2f48;
+
+}
+
+/* --- HÉRO --- */
+.hero {
+  background:linear-gradient(rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.333)), url('./2151438288.jpg') no-repeat center center/cover;
+  /* padding: 0px 10px;; */
+  padding: 1rem 2rem;
+  text-align: center;
+  height: 80vh;
+  margin: 0;
+}
+.hero h2 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color:#dff0df;
+}
+.hero p {
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: white;
+  margin-bottom: 2.5rem;
+}
+
+/* From Uiverse.io by alexmaracinaru */ 
+button {
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.2s;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background: #19679f;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  font-size: 15px;
+  color: white;
+}
+
+button:hover {
+  background: #0b2f48;
+}
+
+button > svg {
+  width: 34px;
+  margin-left: 10px;
+  transition: transform 0.3s ease-in-out;
+  /* color: #dff0df; */
+}
+
+button:hover svg {
+  transform: translateX(5px);
+}
+
+.mission{
+  text-align: center;
+  padding-inline: 120px;
+  height: 100vh;
+  background: #01180713;
+}
+
+.mission h2{
+  font-size: 3rem;
+  color: #19679f;
+  padding-block: 40px;
+}
+
+.mission h3{
+  font-size: 1.5rem;
+  color: #1b2c19;
+  padding-block: 30px;
+}
+
+.valeurs .mission p {
+font-size: 1.2rem;
+font-weight: 400;
+color: #222;
+padding-bottom: 10px;
+
+}
+
+.mission-icon{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+ justify-content: space-between;
+ margin-top: 30px;
+ padding-inline: 50px;
+}
+
+.mission-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mission-icon .mission-content p {
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+.icon-inside img{
+  width: 50px;
+  color: #19679f;
+}
+
+.icon-inside{
+  border: #19679f solid 2px;
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  padding: 10px;
+  align-content: center;
+}
+
+/* --- Programmes --- */
+
+.container h3{
+  font-size: 2.5rem;
+  font-weight: 600px;
+  color: #19679f;
+  padding-block: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+.card {
+  background-color: var(--secondary-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px var(--shadow);
+  
+}
+
+.card img{
+  width: 330px;
+}
+.card h4 {
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.programmes a {
+  padding-inline: 50px;
+  padding-top: 10px;
+  font-weight: 500;
+  transition: .5s ease;
+}
+
+.programmes a:hover{
+color: #19679f;
+font-weight: 600;
+font-size: 17px;
+}
+
+.joy{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.joy img{
+  width: 50%;
+}
+
+.text-joy{
+  padding-inline: 15px;
+  background: #19679f;
+  width: 50%;
+}
+
+.text-joy p{
+  font-size: 23px;
+  color: white;
+  padding-block: 30px;
+}
+
+.joy-btn{
+  background-color: none;
+  border:1px solid white;
+}
+
+.joy-btn:hover{
+background-color: none;
+background: none;
+}
+
+.videos {
+  display: flex;
+  flex-direction: column; /* pour empiler les éléments verticalement */
+  justify-content: center; /* centrage vertical si hauteur le permet */
+  align-items: center;     /* centrage horizontal */
+  padding-inline: 200px;
+  text-align: center;
+  margin-top: 20px;
+  padding-block: 50px;
+  background:#222;
+}
+
+.videos h2{
+  /* padding-block: 10px; */
+  padding-bottom: 5px;
+  color: white;
+  font-size: 2rem;
+}
+
+
+.carousel-container {
+  position: relative;
+  width: 640px;
+  height: 360px;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.video-card {
+  position: relative;
+  width: 640px;
+  flex-shrink: 0;
+}
+
+.video-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+}
+
+.video-card p{
+  padding-bottom: 10px;
+  color: #19679f;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.play-button::before {
+  content: '';
+  border-left: 20px solid #19679f;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+}
+
+video {
+  width: 100%;
+  display: none;
+}
+
+.carousel-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.carousel-buttons button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background: #19679f;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.carousel-buttons button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* --- Témoignages --- */
+.temoignages{
+ height: 80vh;
+}
+.temoignages .card p {
+  font-style: italic;
+}
+.temoignages .container h3{
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #19679f;
+  padding-bottom: 25px;
+  padding-top: 50px;
+}
+
+.temoignages .container .cards .card img{
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+
+/* --- Partenaires --- */
+.partenaires p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* --- Appel à l'action --- */
+.engagement {
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+  padding: 3rem 2rem;
+}
+.engagement p {
+  margin: 1rem 0 2rem;
+}
+.cta-btn {
+  background-color: var(--white);
+  color: var(--primary-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.cta-btn:hover {
+  background-color: #e2e2e2;
+}
+
+
+/* --- Footer --- */
+footer {
+  background-color: #222;
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* --- Responsive ajustements --- */
+/* @media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: right;
+  }
+} */
+
+/* BURGER MENU */
+.burger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+  }
+  
+  @media (max-width: 768px) {
+    .burger {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: var(--primary-color);
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      padding: 1rem;
+      z-index: 1000;
+    }
+  
+    .nav-links.show {
+      display: flex;
+    }
+  
+    .nav-links a {
+      padding: 0.5rem 0;
+    }
+  }
+
+
+  /* ----------- Responsive Design ----------- */
+
+/* Écrans moyens (tablettes et petits laptops) */
+@media (max-width: 1024px) {
+  .nav-container {
+    padding-inline: 40px;
+  }
+
+  .mission {
+    padding-inline: 60px;
+  }
+
+  .mission-icon {
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .videos {
+    padding-inline: 60px;
+  }
+
+  .joy img, .text-joy {
+    width: 100%;
+  }
+
+  .joy {
+    flex-direction: column;
+  }
+
+  .carousel-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .video-card {
+    width: 100%;
+  }
+}
+
+/* Écrans petits (téléphones) */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-inline: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .nav-btn {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    padding-inline: 1rem;
+  }
+
+  .mission {
+    padding-inline: 1.5rem;
+    height: auto;
+  }
+
+  .mission h2 {
+    font-size: 2rem;
+  }
+
+  .mission h3 {
+    font-size: 1.2rem;
+  }
+
+  .mission-icon {
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 1rem;
+  }
+
+  .text-joy p {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  .videos {
+    padding-inline: 1rem;
+  }
+
+  .carousel-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .temoignages {
+    height: auto;
+    padding-bottom: 3rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card img {
+    width: 100%;
+  }
+
+  .donate, .contact-nav {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .container h3 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Très petits écrans */
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .text-joy p {
+    font-size: 1rem;
+  }
+
+  .videos h2 {
+    font-size: 1.5rem;
+  }
+
+  .programmes a {
+    padding-inline: 1rem;
+    font-size: 1rem;
+  }
+
+  .carousel-buttons button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .play-button {
+    width: 60px;
+    height: 60px;
+  }
+
+  .play-button::before {
+    border-left: 15px solid #19679f;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+}
+
+  

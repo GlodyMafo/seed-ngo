@@ -1,0 +1,54 @@
+/* .container{
+    margin: 0;
+    padding: 0;
+} */
+
+.about{
+text-align: center;
+height: 75vh;
+padding-top: 20px;
+align-content: center;
+background: #00000000;
+}
+
+
+.about p{
+  font-size: 1.5rem;
+  padding-bottom: 70px;
+}
+.about hr{
+  width: 80px;
+  align-items:  center;
+  margin-inline: 550px;
+  height: 5px;
+  background: #19679f;
+}
+.vision h3{
+ color: #19679f;
+ font-size: 2.5rem;
+}
+
+.vision{
+  background:inherit;
+  padding-inline: 50px;
+}
+
+.vision p{
+  color:#222;
+}
+
+.joy-ajust{
+  margin: 0px;
+  padding:0;
+}
+
+.joy-ajust .text-joy{
+  padding-bottom: 25px;
+}
+/* .joy-ajust button{
+  margin-bottom: 10px;
+} */
+
+.joy-ajust img{
+margin: 0;
+}

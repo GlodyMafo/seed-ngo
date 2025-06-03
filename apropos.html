@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seed - ONG pour le développement humain et agricole</title>
+  <link rel="stylesheet" href="style/style.css" />
+   <link rel="stylesheet" href="style/about.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav-container">
+      <img src="images/logo.png" alt="logo" class="logo" />
+      <nav>
+        <div class="nav-btn">
+          <button class="donate">Donate</button>
+          <button class="contact-nav">Contact Us</button>
+          <a>french</a>
+          <a>english</a>
+        </div>
+        <hr class="separate" />
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Accueil</a>
+          <a href="apropos.html">À propos</a>
+          <a href="programmes.html">Programmes</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </div>
+    <hr class="barre" />
+  </header>
+      
+<main>
+    <section class="container">
+      <div class="about">
+        <h3>Qui sommes-nous ?</h3>
+        <p>
+          Seed est une organisation non gouvernementale engagée à améliorer les conditions de vie des populations défavorisées en Republique Democratique du Congo. Nous croyons en la puissance de l’éducation, de l’agriculture durable et de la solidarité communautaire pour bâtir un avenir meilleur.
+        </p>
+
+        <hr>
+      </div>
+      
+      </section>
+
+   
+      <section class="joy ">
+        <div class="text-joy vision ">
+          <h3>Notre vision</h3>
+          <p>
+            Batir une société équitable où chaque individu, quelle que soit son
+            origine, peut vivre dignement, apprendre et participer activement
+            au développement de sa communauté.
+            <br>
+            En offrant des opportunités de développement personnel, économique et social à travers des formations, des accompagnements agricoles, et des projets communautaires durables.
+
+          </p>
+         
+        </div>
+        <img src="images/hydraforme.jpg" alt="joy">
+      </section>
+
+
+      <section class="joy joy-ajust">
+        <img src="images/24609.jpg" alt="joy">
+        <div class="text-joy">
+          <p>
+           Nous avons pour objectif de promouvoir l’éducation inclusive et la formation continue
+            Renforcer la résilience alimentaire et les compétences agricoles
+            Favoriser l’autonomisation économique et sociale.
+         <br>
+         Nous avons comme valeurs : Solidarité,
+         Respect de la dignité humaine,
+         Engagement durable,
+         Éthique et transparence.
+          </p>
+         
+          <button class="joy-btn">
+            <span>Donate</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 74 74"
+              height="34"
+              width="34"
+            >
+              <circle
+                stroke-width="3"
+                stroke="white"
+                r="35.5"
+                cy="37"
+                cx="37"
+              ></circle>
+              <path
+                fill="white"
+                d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      
+      </section>
+  
+  
+</main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Seed. Tous droits réservés | Email : contact@seed-ong.org</p>
+    </div>
+  </footer>
+  <script>
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('navLinks');
+  
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+  <script src="js/script.js"></script>
+</body>
+</html>

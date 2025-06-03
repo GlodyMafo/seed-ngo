@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seed - ONG pour le développement humain et agricole</title>
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+          <div class="logo">Seed ONG</div>
+          <nav>
+            <div class="burger" id="burger">
+              ☰
+            </div>
+            <div class="nav-links" id="navLinks">
+              <a href="index.html">Accueil</a>
+              <a href="apropos.html">À propos</a>
+              <a href="programmes.html">Programmes</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </nav>
+        </div>
+      </header>
+      
+<main>
+    <section class="container">
+        <h3>Nous contacter</h3>
+        <p>Vous souhaitez en savoir plus ou rejoindre nos actions ? N’hésitez pas à nous écrire ou nous appeler.</p>
+      
+        <div class="grid-3">
+          <div class="card">
+            <h4>Adresse</h4>
+            <p>123, Avenue des Coopératives, Kinshasa, RDC</p>
+          </div>
+          <div class="card">
+            <h4>Email</h4>
+            <p>contact@seed-ong.org</p>
+          </div>
+          <div class="card">
+            <h4>Téléphone</h4>
+            <p>+243 999 000 000</p>
+          </div>
+        </div>
+      
+        <h4 style="margin-top:2rem;">Envoyer un message</h4>
+        <form>
+          <input type="text" placeholder="Nom" required style="width:100%; padding:0.75rem; margin-bottom:1rem;">
+          <input type="email" placeholder="Email" required style="width:100%; padding:0.75rem; margin-bottom:1rem;">
+          <textarea placeholder="Votre message" rows="5" required style="width:100%; padding:0.75rem;"></textarea>
+          <button class="cta-btn" type="submit" style="margin-top:1rem;">Envoyer</button>
+        </form>
+      </section>
+</main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Seed. Tous droits réservés | Email : contact@seed-ong.org</p>
+    </div>
+  </footer>
+  <script>
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('navLinks');
+  
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+  <script src="js/script.js"></script>
+</body>
+</html>

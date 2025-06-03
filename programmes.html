@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seed - ONG pour le développement humain et agricole</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/project.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container nav-container">
+        <img src="images/logo.png" alt="logo" class="logo" />
+        <nav>
+          <div class="nav-btn">
+            <button class="donate">Donate</button>
+            <button class="contact-nav">Partenariat</button>
+            <a>french</a>
+            <a>english</a>
+          </div>
+          <hr class="separate" />
+          <div class="burger" id="burger">☰</div>
+          <div class="nav-links" id="navLinks">
+            <a href="index.html">Accueil</a>
+            <a href="apropos.html">À propos</a>
+            <a href="programmes.html">Programmes</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </nav>
+      </div>
+      <hr class="barre" />
+    </header>
+
+    <main>
+      <section class="container programs-cont">
+        <h3>Nos principaux programmes</h3>
+        <div class="programs">
+          <div class="grid-3">
+            <div class="card">
+              <h4>Formation professionnelle</h4>
+              <p>
+                Des formations pratiques en couture, informatique,
+                entrepreneuriat et plus, pour permettre aux jeunes et femmes de
+                développer des compétences utiles.
+              </p>
+            </div>
+            <div class="card">
+              <h4>Agroécologie & permaculture</h4>
+              <p>
+                Nous accompagnons les communautés rurales à adopter des
+                pratiques agricoles durables et productives pour lutter contre
+                l’insécurité alimentaire.
+              </p>
+            </div>
+            <div class="card">
+              <h4>Microcrédits solidaires</h4>
+              <p>
+                Des financements à taux zéro pour les femmes entrepreneures et
+                petits agriculteurs afin de démarrer ou renforcer leur activité
+                économique.
+              </p>
+            </div>
+          </div>
+
+          <img
+            src="images/prog.jpg"
+            alt="prog-pict"
+          />
+        </div>
+      </section>
+
+      <section>
+       <div>
+        
+       </div>
+        <h1 class="seed-title">Les projets de l'ONG SEED</h1>
+        <div class="seed-grid" id="seed-projects-container"></div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2025 Seed. Tous droits réservés | Email : contact@seed-ong.org
+        </p>
+      </div>
+    </footer>
+    <script>
+      const burger = document.getElementById("burger");
+      const navLinks = document.getElementById("navLinks");
+
+      burger.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+      });
+    </script>
+    <script src="js/script.js"></script>
+    <script src="js/projects.js"></script>
+  </body>
+</html>
